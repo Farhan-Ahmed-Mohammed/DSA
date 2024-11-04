@@ -55,7 +55,7 @@ void InOrder(struct Node* head)
 
 int main()
 {
-    struct Node* binaryTree=create(5);;
+    struct Node* binaryTree=create(5);
     binaryTree->left=create(6);
     binaryTree->right=create(7);
     binaryTree->left->left=create(8);
