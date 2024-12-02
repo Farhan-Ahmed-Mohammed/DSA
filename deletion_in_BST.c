@@ -71,7 +71,7 @@ struct Node* delete(struct Node* binaryTree,int x)
         }
         if( binaryTree->left!=NULL && binaryTree->right==NULL)   // 1 child in left
         {
-            struct Node* temp=binaryTree->left;
+            struct Node* temp=binaryTree->left; // store in left value in temp
             free(binaryTree);
             return temp;
               
@@ -79,7 +79,7 @@ struct Node* delete(struct Node* binaryTree,int x)
 
          if( binaryTree->left==NULL && binaryTree->right!=NULL)   // 1 child in right
         {
-            struct Node* temp=binaryTree->right;
+            struct Node* temp=binaryTree->right; //store right value in temp
             free(binaryTree);
             return temp;
               
@@ -87,7 +87,7 @@ struct Node* delete(struct Node* binaryTree,int x)
 
          if( binaryTree->left!=NULL && binaryTree->right!=NULL)   // 2 children case
         {
-            struct Node* min=minValue(binaryTree->right);
+            struct Node* min=minValue(binaryTree->right); //find min from right
             binaryTree->data=min->data;
             binaryTree->right=delete(binaryTree->right,min->data);
             return binaryTree;
