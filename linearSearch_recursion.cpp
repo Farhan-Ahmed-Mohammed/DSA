@@ -13,7 +13,7 @@ int linearSearch(int arr[],int key,int n)
     }
     else
     {
-        return linearSearch(arr,key,--n);
+        return linearSearch(arr,key,--n); // here we have to use only pre incerment of n-1 bcoz if we use post increment it dont decrease n value in function call and it remains same
     }
 }
 
