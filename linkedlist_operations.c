@@ -87,7 +87,10 @@ int main()
     head=insertAtHead(25,head);
     head=insertAtHead(35,head);
     head=insertAtHead(15,head);
+    printf("linked list :\n");
+    print(head);
     head=delete(head,15);
+    printf("After deleting :\n");
     print(head);
 }
 
