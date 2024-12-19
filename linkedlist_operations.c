@@ -41,7 +41,7 @@ struct Node* delete(struct Node* head,int x)
         return head;
     }
 
-    if(head->data==x)
+    if(head->data==x)            // if node to delete is first node
     {
         struct Node* temp=head;
         head=head->next;
