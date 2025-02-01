@@ -18,7 +18,7 @@ public:
         next=new int[s];
         for (int i = 0; i < n; i++) 
         {
-          top[i] = -1;
+          top[i] = -1; //initailly put -1 in all top indexes
         }
         for(int i=0;i<s;i++)
         {
