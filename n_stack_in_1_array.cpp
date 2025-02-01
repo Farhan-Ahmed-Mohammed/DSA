@@ -25,7 +25,7 @@ public:
             next[i]=i+1;
         }
         next[s-1]=-1; //update last index value to -1
-        freeSpot=0;
+        freeSpot=0; //its the spot where element can pushed
         // Write your code here.
     }
     // Pushes 'X' into the Mth stack. Returns true if it gets pushed into the stack, and false otherwise.
