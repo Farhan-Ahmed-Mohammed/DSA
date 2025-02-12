@@ -69,7 +69,7 @@ class Solution {
           traverseRight(root->left,ans);
       }
       
-      ans.push_back(root->data);
+      ans.push_back(root->data); // in reverse dirn we want so we wrote at last
   }
   
     vector<int> boundaryTraversal(Node *root) {
@@ -78,7 +78,7 @@ class Solution {
         {
             return ans;
         }
-        ans.push_back(root->data);
+        ans.push_back(root->data); //pushing root node in nans
         
         traverseLeft(root->left,ans);
         
