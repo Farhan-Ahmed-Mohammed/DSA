@@ -27,7 +27,7 @@ void inorder(BinaryTreeNode<int>* root)
 }
 
 bool twoSumInBST(BinaryTreeNode<int>* root, int target) {
-	  ans.clear(); 
+	  ans.clear();     // clear becoz we have values from b4 test cases so we ahe to clear it every time and now new test cse values are added
      inorder(root);
      int left=0;
      int right=ans.size()-1;
