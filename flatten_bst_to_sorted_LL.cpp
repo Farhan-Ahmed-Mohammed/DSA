@@ -37,21 +37,21 @@ void inorder(TreeNode<int>* root,vector<int> &ans)
 TreeNode<int>* flatten(TreeNode<int>* root)
 {
     vector<int> ans;
-    inorder(root,ans);
+    inorder(root,ans);           //we get in sorted order
     int n=ans.size();
 
     TreeNode<int>* newRoot=new TreeNode<int>(ans[0]);
     TreeNode<int>* curr=newRoot;
     
-    for(int i=1;i<n;i++)
+    for(int i=1;i<n;i++)      // start from 2nd element
     {
         TreeNode<int>* temp=new TreeNode<int>(ans[i]);
-        curr->left=NULL;
-        curr->right=temp;
+        curr->left=NULL;     //make all left null
+        curr->right=temp;    //make curr right as next element in ans 
         curr=temp;
     }
     
-    curr->left=NULL;
+    curr->left=NULL;      // for last element both left and right are null
     curr->right=NULL;
     
     return newRoot;// Write your code here
