@@ -24,7 +24,7 @@
         }
     };
 */
-BinaryTreeNode<int>* solve(vector<int> &preorder,int mini,int maxi,int &i)
+BinaryTreeNode<int>* solve(vector<int> &preorder,int mini,int maxi,int &i)   // many other solutions there but this has T.C O(n)
 {
     if(i>=preorder.size())
     {
