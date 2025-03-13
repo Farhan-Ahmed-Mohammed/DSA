@@ -14,7 +14,7 @@ bool isSafe(vector<vector<int>>& board,int row,int col,int val)
             return false;
         }
         //3x3 matrix check
-        if(board[3*(row/3) +i/3][3*(col/3) + i%3]==val)
+        if(board[3*(row/3) +i/3][3*(col/3) + i%3]==val)  //dry run this to understand this formula
         {
             return false;
         }
