@@ -46,7 +46,8 @@ int main()
     cout<<"Enter the no of edges :"<<endl;
     cin>>m;
 
-    graph<int> g;
+    graph<int> g;  //if we want to insert characteres just change here int to char no need to change whole codd e bcoz we used template
+
 
     for(int i=0;i<m;i++)
     {
