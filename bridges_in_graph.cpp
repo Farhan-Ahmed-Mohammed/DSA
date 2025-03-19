@@ -29,6 +29,8 @@ void dfs(int node,int parent,int &timer,vector<int> &disc,vector<int> &low,vecto
 
         else
         {
+            //node already visited and not parent
+            //back edge
             low[node]=min(low[node],disc[neighbour]);
         }
     }
