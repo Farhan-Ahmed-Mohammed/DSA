@@ -21,6 +21,30 @@ class Solution {
       return dp[curr][prev+1]=max(include,exclude);
       
   }
+
+// int solveTab(int n,int arr[])
+// {
+//   vector<int> currRow(n+1,0);
+//   vector<int> nextRow(n+1,0);
+
+//   for(int curr=n-1;curr>=0;curr--)
+//     {
+//       for(int prev=curr-1;prev>=-1;prev--)
+//         {
+//            int include=0;
+//            if(prev==-1 || arr[curr]>arr[prev])
+//            {
+//               include=1+nextRow[curr+1];
+//            }
+
+//           int exclude=0+nextRow[prev+1];
+//           currRow[prev+1]=max(include,exclude);
+//         }
+//         nextRow=currRow;
+//     }
+//   return nextRow[0];
+// }
+     
     int lis(vector<int>& arr) {
         int n=arr.size();
        vector<vector<int>> dp(n,vector<int> (n+1,-1));
